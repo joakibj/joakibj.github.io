@@ -255,6 +255,14 @@ namespace :theme do
   
 end # end namespace :theme
 
+# Start Jekyll on Windows, handling UTF-8 chars
+task :runwindows do
+    puts '* Changing the codepage'
+    `chcp 65001`
+    puts '* Running Jekyll'
+    `jekyll --server --auto`
+end
+
 # Internal: Download and process a theme from a git url.
 # Notice we don't know the name of the theme until we look it up in the manifest.
 # So we'll have to change the folder name once we get the name.
