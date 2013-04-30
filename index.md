@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-#tagline: My personal site
+#tagline: 
 ---
 {% include JB/setup %}
 
